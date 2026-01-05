@@ -109,12 +109,10 @@ public class GameManager : MonoBehaviour
                 currentStreak++;
                 OnScoreChanged?.Invoke(currentStreak);
                 StartCoroutine(StartNextRoundAfterDelay());
-                Debug.LogError("PlayerWin");
                 break;
 
             case RoundResult.AiWin:
                 LoseHeart();
-                Debug.LogError("AiWin");
                 break;
 
             case RoundResult.Draw:
