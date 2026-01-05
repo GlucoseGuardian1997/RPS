@@ -7,6 +7,7 @@ apk - https://drive.google.com/file/d/1dB8ATc0xC93xoP2Lb3ZrnmrRLdAmena8/view?usp
 
 <img width="421" height="358" alt="Screenshot 2026-01-05 at 9 48 05 AM" src="https://github.com/user-attachments/assets/f85c4051-72c0-4b2c-ae3e-02efa93a65c7" />
 
+Time spent on project ~ 6hrs
 ---
 
 ## 🎮 Gameplay
