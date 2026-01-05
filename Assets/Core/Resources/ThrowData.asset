@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b600c905b3d1448d92a6216722648a8, type: 3}
+  m_Name: ThrowData
+  m_EditorClassIdentifier: Assembly-CSharp::ThrowData
+  ThrowItems:
+  - {fileID: 11400000, guid: daa3e1138701e4c70b48595364d4632c, type: 2}
+  - {fileID: 11400000, guid: 59e2052d6aaa9414892af7edb2a3463d, type: 2}
+  - {fileID: 11400000, guid: 8ae9e835e16f34d8e8dd14597f8fb178, type: 2}
+  - {fileID: 11400000, guid: b3bfcd71e710a4b0cad44874364ce728, type: 2}
+  - {fileID: 11400000, guid: 55554af991a984d7bab02f81c299e20d, type: 2}
+  RiggedFlow: []
+  RoundTimer: 15
+  ThrowTimer: 10
