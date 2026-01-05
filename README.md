@@ -3,6 +3,8 @@
 A round-based, retro-styled implementation of **Rock–Paper–Scissors–Lizard–Spock** built in **Unity (C#)**.  
 The project focuses on **clean game-loop architecture**, **event-driven UI**, and **strict separation of game logic and presentation**.
 
+apk - https://drive.google.com/file/d/1dB8ATc0xC93xoP2Lb3ZrnmrRLdAmena8/view?usp=drive_link
+
 ---
 
 ## 🎮 Gameplay
