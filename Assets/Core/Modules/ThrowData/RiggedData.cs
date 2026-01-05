@@ -7,4 +7,3 @@ public class RiggedData : ScriptableObject
 {
     public List<Items> RiggedItems;
 }
-

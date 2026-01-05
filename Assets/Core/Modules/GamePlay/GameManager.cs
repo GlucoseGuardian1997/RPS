@@ -177,7 +177,6 @@ public class GameManager : MonoBehaviour
         UiManager.Instance.SwitchToStart();
     }
 
-    // 🔒 EXISTING ACCESSORS (DO NOT REMOVE)
     public float GetRemainingTime() => remainingTime;
     public int GetHearts() => hearts;
     public int GetHighScore() => highScore;

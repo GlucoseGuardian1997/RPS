@@ -31,7 +31,7 @@ public class UiManager : MonoBehaviour
         currentState?.OnTick();
     }
 
-    public void SwitchToStart()    => SwitchState(startState);
+    public void SwitchToStart() => SwitchState(startState);
     public void SwitchToGameplay() => SwitchState(gameplayState);
 
     public List<ThrowItem> GetThrowItems()

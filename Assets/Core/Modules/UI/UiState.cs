@@ -16,5 +16,7 @@ public abstract class UiState : MonoBehaviour
         uiManager = null;
     }
 
-    public virtual void OnTick() { }
+    public virtual void OnTick()
+    {
+    }
 }

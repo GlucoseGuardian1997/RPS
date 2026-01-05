@@ -24,13 +24,14 @@ public class AI
 
         return data.RiggedItems;
     }
-    
+
     public Items GetAiThrow(int lifetimeRoundIndex)
     {
         if (lifetimeRoundIndex < riggedFlow.Count)
         {
             return riggedFlow[lifetimeRoundIndex];
         }
+
         return GetRandomThrow();
     }
 

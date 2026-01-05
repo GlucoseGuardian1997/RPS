@@ -7,4 +7,3 @@ public class ThrowData : ScriptableObject
 {
     public List<ThrowItem> ThrowItems;
 }
-

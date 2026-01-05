@@ -20,7 +20,7 @@ public class UiGameplayState : UiState
 
     [SerializeField] private List<UiThrowToolIcon> throwIcons;
     [SerializeField] private UiHeartsView heartsView;
-    
+
     private float cycleInterval = 0.05f;
 
     private Coroutine playerCycleRoutine;
@@ -42,9 +42,9 @@ public class UiGameplayState : UiState
         GameManager.Instance.OnGameOver += GameOverScreen;
         GameManager.Instance.OnHeartsChanged += OnHeartsChanged;
         GameManager.Instance.OnRoundTimerReset += OnRoundTimerReset;
-        
+
         GameManager.Instance.StartNewRun();
-        
+
         inputLocked = false;
         currentRoundIndex = 1;
         roundText.text = $"Round {currentRoundIndex++}";
@@ -58,7 +58,7 @@ public class UiGameplayState : UiState
         quitButton?.onClick.AddListener(OnQuitClicked);
 
         UpdateHeartsUI(GameManager.Instance.GetHearts());
-        
+
         StartCyclingImages();
     }
 
@@ -82,7 +82,7 @@ public class UiGameplayState : UiState
             outOfTimeObj?.SetActive(false);
         }
     }
-    
+
     private void OnRoundTimerReset(float duration, bool isDraw)
     {
         if (timer == null)
@@ -100,10 +100,10 @@ public class UiGameplayState : UiState
         inputLocked = false;
 
         StartCyclingImages();
-        
-        if(isDraw)
+
+        if (isDraw)
             return;
-        
+
         if (roundText != null)
             roundText.text = $"Round {currentRoundIndex++}";
     }
@@ -118,11 +118,11 @@ public class UiGameplayState : UiState
         UpdateHeartsUI(heartsLeft);
         ShowResult(false);
     }
-    
+
     private void ShowResult(bool playerWon)
     {
         inputLocked = true;
-        StopCyclingImages(); 
+        StopCyclingImages();
 
         resultObj?.SetActive(true);
         resultText.text = playerWon ? "YOU WIN" : "AI WINS";
@@ -132,7 +132,7 @@ public class UiGameplayState : UiState
     {
         inputLocked = true;
         StopCyclingImages();
-        
+
         if (resultObj != null)
             resultObj.SetActive(true);
 
@@ -155,7 +155,7 @@ public class UiGameplayState : UiState
             );
         }
     }
-    
+
     private void OnPlayerIconClick(Items type)
     {
         if (inputLocked)
@@ -201,7 +201,7 @@ public class UiGameplayState : UiState
     {
         uiManager.SwitchToStart();
     }
-    
+
     private void StartCyclingImages()
     {
         StopCyclingImages();
@@ -209,7 +209,7 @@ public class UiGameplayState : UiState
         playerCycleRoutine = StartCoroutine(CyclePlayerImage());
         aiCycleRoutine = StartCoroutine(CycleAiImage());
     }
-    
+
     private IEnumerator CyclePlayerImage()
     {
         var items = uiManager.GetThrowItems();
@@ -274,7 +274,7 @@ public class UiGameplayState : UiState
             icon.OnExitButtonClick();
 
         StopCyclingImages();
-        
+
         base.OnExit();
     }
 }
