@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: fbd86919f3b943d997c778048d958bd1, type: 3}
   m_Name: Paper
   m_EditorClassIdentifier: Assembly-CSharp::ThrowItem
   ThrowTypeName: 1
-  WinItems: 0400000000000000
+  WinItems: 0000000004000000
   Icon: {fileID: 887455122, guid: 2308b3341eb9d4d60b77bd6098963222, type: 3}
