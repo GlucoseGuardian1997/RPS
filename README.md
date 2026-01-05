@@ -1,4 +1,4 @@
-# Rock · Paper · Scissors · Lizard · Spock (Unity)
+# Rock · Paper · Scissors · Lizard · Spock (Unity 6.3LTS)
 
 A round-based, retro-styled implementation of **Rock–Paper–Scissors–Lizard–Spock** built in **Unity (C#)**.  
 The project focuses on **clean game-loop architecture**, **event-driven UI**, and **strict separation of game logic and presentation**.
